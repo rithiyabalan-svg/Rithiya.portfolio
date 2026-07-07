@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rithiya Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#000;
+    color:white;
+}
+
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:rgba(0,0,0,0.95);
+    padding:20px 10%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:1000;
+    border-bottom:2px solid #ffd700;
+}
+
+.logo{
+    color:#ffd700;
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#ffd700;
+}
+
+section{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:120px 10%;
+}
+
+.container{
+    max-width:1000px;
+    width:100%;
+    text-align:center;
+}
+
+h1{
+    font-size:55px;
+    color:#ffd700;
+    margin-bottom:20px;
+}
+
+h2{
+    font-size:45px;
+    color:#ffd700;
+    margin-bottom:25px;
+}
+
+p{
+    font-size:20px;
+    line-height:1.8;
+}
+
+.highlight{
+    color:#ffd700;
+    font-weight:bold;
+}
+
+.card-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+    margin-top:40px;
+}
+
+.card{
+    background:#111;
+    border:2px solid #ffd700;
+    border-radius:15px;
+    padding:25px;
+    transition:0.4s;
+    box-shadow:0 0 15px rgba(255,215,0,0.2);
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 25px #ffd700;
+}
+
+.card h3{
+    color:#ffd700;
+    margin-bottom:15px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:12px 30px;
+    background:#ffd700;
+    color:black;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    border-top:2px solid #ffd700;
+    color:#aaa;
+}
+</style>
+</head>
+<body>
+
+<nav>
+    <div class="logo">RITHIYA</div>
+    <ul>
+        <li><a href="#home">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- HOME PAGE -->
+<section id="home">
+    <div class="container">
+        <h1>Hello, I'm Rithiya ✨</h1>
+        <p>
+            I am <span class="highlight">Rithiya</span>, a passionate
+            <span class="highlight">BCA Student</span> from
+            <span class="highlight">RD National College</span>.
+            <br><br>
+            I am at the beginning of my tech journey, exploring web
+            development, creative design, and modern technologies.
+            Every expert was once a beginner, and I'm excited to learn,
+            create, and grow one project at a time.
+        </p>
+
+        <a href="#skills" class="btn">Explore My Journey</a>
+    </div>
+</section>
+
+<!-- SKILLS PAGE -->
+<section id="skills">
+    <div class="container">
+        <h2>My Skills ⚡</h2>
+
+        <div class="card-container">
+
+            <div class="card">
+                <h3>HTML & CSS</h3>
+                <p>
+                    Building attractive and responsive websites with
+                    clean layouts and modern designs.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Creative Thinking</h3>
+                <p>
+                    Turning simple ideas into unique and visually
+                    appealing digital experiences.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Quick Learner</h3>
+                <p>
+                    Always eager to learn new technologies and improve
+                    my technical knowledge.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Problem Solving</h3>
+                <p>
+                    Enjoy finding smart and efficient solutions while
+                    learning programming concepts.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- PROJECT PAGE -->
+<section id="projects">
+    <div class="container">
+        <h2>Projects 🚀</h2>
+
+        <div class="card-container">
+
+            <div class="card">
+                <h3>Future Portfolio</h3>
+                <p>
+                    Currently crafting my personal portfolio website to
+                    showcase creativity, passion, and future achievements.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Learning Journey</h3>
+                <p>
+                    Every line of code I write today is building the
+                    foundation for tomorrow's innovative projects.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Dream Projects</h3>
+                <p>
+                    The best projects are yet to come. I am preparing
+                    myself to create impactful and meaningful solutions.
+                </p>
+            </div>
+
+        </div>
+
+        <p style="margin-top:40px;">
+            <span class="highlight">
+                "I may be a beginner today, but every great developer
+                started exactly where I am now."
+            </span>
+        </p>
+    </div>
+</section>
+
+<!-- CONTACT PAGE -->
+<section id="contact">
+    <div class="container">
+        <h2>Let's Connect 💛</h2>
+
+        <p>
+            Opportunities don't just happen, they are created through
+            conversations. If you'd like to connect, collaborate, or
+            simply say hello, I'd love to hear from you.
+        </p>
+
+        <div class="card-container" style="margin-top:50px;">
+
+            <div class="card">
+                <h3>Name</h3>
+                <p>Rithiya</p>
+            </div>
+
+            <div class="card">
+                <h3>Phone</h3>
+                <p>7806838543</p>
+            </div>
+
+            <div class="card">
+                <h3>Email</h3>
+                <p>rithiyabalan@gmail.com</p>
+            </div>
+
+        </div>
+
+        <a href="mailto:rithiyabalan@gmail.com" class="btn">
+            Contact Me
+        </a>
+    </div>
+</section>
+
+<footer>
+    © 2026 Rithiya | Designed with Black & Golden Elegance ✨
+</footer>
+
+<script>
+const sections = document.querySelectorAll("section");
+
+window.addEventListener("scroll", () => {
+    sections.forEach(section => {
+        const top = window.scrollY;
+        const offset = section.offsetTop - 300;
+        if(top >= offset){
+            section.style.opacity = "1";
+            section.style.transform = "translateY(0)";
+        }
+    });
+});
+
+sections.forEach(section => {
+    section.style.opacity = "0";
+    section.style.transform = "translateY(50px)";
+    section.style.transition = "1s";
+});
+
+window.dispatchEvent(new Event("scroll"));
+</script>
+
+</body>
+</html>
